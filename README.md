@@ -28,6 +28,18 @@ python Infer.py
 ```
 You can rewrite the DataOprate.py to train your own data.
 
+## Basic Usage for Segmenting Novel Data
+For running the straight-out-of-the-box fetal cortical plate segmentation
+
+1. Make an "Input/" directory
+2. For each input image, add a subdirectory and copy the input image (ie "Input/Image001/image.nii.gz")
+3. $ python infer_novel.py
+4. Outputs will be named like "Input/Image001/predict.nii.gz"
+
+Directory and file paths can be adjusted in the infer_novel script
+
+
+
 ## Result
 Visual comparison of the segmentation results obtained from different methods.   
 ![2dresult](img/2d_result.png)  
